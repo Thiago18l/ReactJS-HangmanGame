@@ -92,13 +92,13 @@ class Hangman extends Component {
 							<li className='nav-item'></li>
 							<li className='nav-item'></li>
 						</ul>
-						<span className='navbar-text text-primary'>Guessed wrong: {this.state.mistake}</span>
+						<span className='navbar-text text-primary'>Tentativas erradas: {this.state.mistake}</span>
 					</div>
 				</nav>
 				<p className='text-center'>
 					<img src={this.props.images[this.state.mistake]} alt={altText} />
 				</p>
-				<p className='text-center text-light'>Guess the Programming Language ?</p>
+				<p className='text-center text-light'>Qual a linguagem de Programação ?</p>
 				<p className='Hangman-word text-center'>
 					{!gameOver ? this.guessedWord() : this.state.answer}{" "}
 				</p>
